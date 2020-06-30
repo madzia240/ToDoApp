@@ -66,6 +66,13 @@ class App extends Component {
     return (
       <>
         <h1>ToDo App</h1>
+        <nav>
+          <ul>
+            <li>do zrobienia</li>
+            <li>dodaj</li>
+            <li>zrobione</li>
+          </ul>
+        </nav>
         <AddTask add={this.addTask} />
         <TaskList
           tasks={this.state.tasks}

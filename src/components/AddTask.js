@@ -30,7 +30,7 @@ class AddTask extends Component {
       this.setState({
         text: "",
         checked: "",
-        date: this.minDate,
+        date: new Date().toISOString().slice(0, 10),
       });
     }
   };
@@ -65,7 +65,6 @@ class AddTask extends Component {
         />
         <br />
         <button onClick={this.handleClick}>dodaj</button>
-        <hr />
       </div>
     );
   }
